@@ -10,8 +10,7 @@ header, footer {
     width : 100%;
     height : 10vh;
     color: aliceblue;
-    background-color: #191919;
-    border: 1px solid black;
+    background-color: rgba(76, 175, 80, 0.3);
 }
 footer{
     position: fixed;
