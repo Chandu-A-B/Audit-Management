@@ -1,6 +1,6 @@
 .result-card{
     top:150px;
-    background-color: black;
+    background:linear-gradient(to right, black, 50%, teal );
     color:#ffffffb2
 }
 
@@ -21,7 +21,11 @@ td, th{
     color:#ffffffb2;
 
 }
-
+.bigbtn{
+	border:white;
+	background: white;
+    padding: 5px;
+}
 .endbtn{
     margin-bottom: 10px;
     text-align: center;

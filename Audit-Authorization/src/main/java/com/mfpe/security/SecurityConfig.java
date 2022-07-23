@@ -5,6 +5,7 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
+import org.springframework.security.config.annotation.web.builders.WebSecurity;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
 import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
 import org.springframework.security.config.http.SessionCreationPolicy;
@@ -23,7 +24,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter{
 	private ProjectManagerDetailsService projectManagerDetailsService;
 	
 	@Autowired
-	private JwtRequestFilter jwtRequestFilter;
+	private JwtRequestFilter jwtRequestFilter;	//jwt request filter
 	
 	@Bean
 	public PasswordEncoder passwordEncoder() {
@@ -41,7 +42,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter{
 
 	@Override
 	protected void configure(AuthenticationManagerBuilder auth) throws Exception {
-		auth.userDetailsService(projectManagerDetailsService).passwordEncoder(passwordEncoder());
+		auth.userDetailsService(projectManagerDetailsService).passwordEncoder(passwordEncoder());	//authentication bean 
 	}
 	
 	@Override
@@ -56,4 +57,10 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter{
 		
 		http.addFilterBefore(jwtRequestFilter, UsernamePasswordAuthenticationFilter.class);	// adding the filter
 	}
+	@Override
+    public void configure(WebSecurity web) throws Exception {
+        web
+            .ignoring()
+            .antMatchers("/auth/db/**");
+    }
 }

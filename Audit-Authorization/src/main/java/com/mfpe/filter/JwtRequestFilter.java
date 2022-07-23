@@ -37,15 +37,15 @@ public class JwtRequestFilter extends OncePerRequestFilter{
 	protected void doFilterInternal(HttpServletRequest request, HttpServletResponse response, FilterChain filterChain)
 			throws ServletException, IOException, ProjectManagerNotFoundException {
 		
-		final String jwtRequestHeader = request.getHeader("Authorization");
+		final String jwtRequestHeader = request.getHeader("Authorization");	//we are accessing the header for the authorization
 		
 		logger.info("Inside JwtRequestFilter : " + request.getRequestURI());
 		
 		String jwt = null, username = null;
 		if (jwtRequestHeader != null && jwtRequestHeader.startsWith("Bearer ")) {
-			jwt = jwtRequestHeader.substring(7);
+			jwt = jwtRequestHeader.substring(7);	//the brearer token is in the first 7 characters therfore we use substring 7
 			try {
-				username = jwtService.extractUsername(jwt);
+				username = jwtService.extractUsername(jwt);	//extracting the username in try catch
 				logger.info("Successfully obtained username : (" + username + ") from JWT");
 			} catch (Exception e) {
 				logger.error(e.getMessage());
@@ -55,6 +55,7 @@ public class JwtRequestFilter extends OncePerRequestFilter{
 		}
 		
 		if (username != null && SecurityContextHolder.getContext().getAuthentication() == null) {
+			// validating the jwt here ny comparing the username etc
 
 			ProjectManagerDetails projectManagerDetails = projectManagerDetailsService.loadUserByUsername(username);
 			if (jwtService.validateToken(jwt, projectManagerDetails)) {
@@ -74,7 +75,7 @@ public class JwtRequestFilter extends OncePerRequestFilter{
 		else {
 			logger.error("Problem with JWT token obtained from Request-Header. JWT :: "+jwt);
 		}
-		logger.info("-------- Exiting JwtRequestFilter");
+		logger.info("-------- Exiting JwtRequestFilter-------");
 		filterChain.doFilter(request, response);
 	}
 }

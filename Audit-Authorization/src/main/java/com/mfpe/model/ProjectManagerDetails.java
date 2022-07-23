@@ -9,9 +9,19 @@ import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Component;
 
+import lombok.AllArgsConstructor;
 import lombok.ToString;
-
+/*
+ * this is the projectManagerDetails. 
+ * it contains details of the project manager
+ * id
+ * name
+ * username
+ * password
+ * projectname
+ */
 @ToString
+@AllArgsConstructor
 @Component
 public class ProjectManagerDetails implements UserDetails{
 	

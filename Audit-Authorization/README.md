@@ -5,19 +5,16 @@
 <table>
   <tr>
       <td>
-        <a href="https://github.com/DRoy7">Deep Roy</a>
+        <a href="https://github.com/Nil3110">Nilotpal Ghosh</a>
         </td>
       <td>
-        <a href="https://github.com/sriharish252">Sri Harish</a>
+        <a href="https://github.com/SheenaNarula">Sheena Narula</a>
         </td>
       <td>
-        <a href="https://github.com/Kamalesh8">Kamalesh R</a>
+        <a href="https://github.com/rishabhthakral">Rishabh Thakral</a>
         </td>
       <td>
-        <a href="https://github.com/Megha0699">Megha S</a>
-        </td>
-      <td>
-        <a href="https://github.com/greninja199">Praduman Kumar</a>
+        <a href="https://github.com/haseebraza123">Haseeb Raza</a>
         </td>
     </tr>
 </table>

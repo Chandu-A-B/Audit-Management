@@ -31,7 +31,7 @@ section{
     right:5.5vh;
 }
 .box1 {
-    background-color: black;
+    background: linear-gradient(to right, black, 50%, teal );
     margin-top: 12vh;
     margin-left: 10vh;
     margin-right: 10vh;
@@ -41,12 +41,12 @@ section{
     border-radius: 10px;
   }
   .box2 {
-    background-color: black;
+    background: linear-gradient(to right, black, 50%, teal );
     margin-top: 4vh;
-    margin-left: 5%;
-    margin-right: 5%;
-    padding: 10px;
-    width:90%;
+    margin-left: 0%;
+    margin-right: 0%;
+    padding: none;
+    width:100%;
     color: #fff;
     text-align: center;
     border-radius: 20px;
@@ -146,7 +146,7 @@ section{
 }
 
 .main{
-    background: linear-gradient(to right, #b92b27, #1565c0);
+    background: white;
     position: absolute;
     z-index: -1;
     top:0px;
@@ -159,6 +159,8 @@ section{
     width: 120px;
 }
 .bigbtn{
+	border:white;
+	background: white;
     padding: 5px;
 }
 

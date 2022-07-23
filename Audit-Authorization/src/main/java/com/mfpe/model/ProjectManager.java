@@ -9,9 +9,23 @@ import javax.persistence.Table;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.Getter;
 import lombok.NoArgsConstructor;
-
-@Data
+import lombok.Setter;
+import lombok.ToString;
+/*
+ * this contains the data for the project manager
+ * we are using the table project_manager the table is a H2 table and runs in runtime
+ * id
+ * name
+ * username
+ * password
+ * projectname
+ * we are using lombok for the boilerplate code
+ */
+@Getter
+@Setter
+@ToString
 @Entity
 @Table(name="project_manager")
 @NoArgsConstructor
