@@ -71,6 +71,7 @@ h6{
 }
 
 .nav-item :hover{
-    background-color: rgb(141, 219, 250);
+    background-color: #231955;
+    border-radius: 10px;
     color: #191919;
 }

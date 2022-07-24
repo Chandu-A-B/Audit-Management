@@ -9,7 +9,7 @@
 		<version>2.5.2</version>
 		<relativePath /> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.mfpe.pod1cohort24</groupId>
+	<groupId>com.mfpe.pod1cohort087</groupId>
 	<artifactId>audit-severity</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>audit-severity</name>
