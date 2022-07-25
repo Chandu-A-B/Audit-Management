@@ -1,6 +1,7 @@
 .result-card{
     top:150px;
-    background:linear-gradient(to right, black, 50%, teal );
+    
+    background: linear-gradient(to right, #0f0c29, #302b63, #24243e);
     color:#ffffffb2
 }
 

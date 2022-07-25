@@ -66,7 +66,7 @@ section{
       padding-left: 15px;
       text-align: center;
       width: 30%;
-      border-color: #fff;
+      border-color:black;
       border-width: 1px;
       border-top-left-radius: 10px;
       border-left: 0px;
@@ -76,7 +76,7 @@ section{
       padding-bottom: 2px;
       text-align: center;
       width: 20%;
-      border-color: #fff;
+      border-color: black;
       border-width: 1px;
       border-radius: 10px;
       border-right: 1px;
@@ -86,7 +86,7 @@ section{
     padding-bottom: 2px;
     text-align: center;
     width: 30%;
-    border-color: #fff;
+    border-color: black;
     border-width: 1px;
     border-radius: 10px;
     border-right: 0px;
@@ -132,13 +132,9 @@ section{
     background-color: blue;
 }
 
-.qdiv{
-    background-color: white;
-    border-radius: 10px;
-}
 
 .qdivbtn{
-    background-color: white;
+    
     text-align: center;
     margin: 10px;
     padding-top: 10px;
@@ -165,6 +161,23 @@ section{
     padding: 5px;
     color:white;
 }
+
+.bigbtn1{
+	border:2px solid black;
+	border-radius: 10px;
+	background:#00a6e3;
+    padding: 5px;
+    color:black;
+}
+
+.bigbtn1:hover {
+	border:2px solid black;
+	border-radius: 10px;
+	background:#00baff;
+    padding: 5px;
+    color:black;
+}
+
 .bigbtn:hover{
 	background:linear-gradient(to right, black, 40%, #302b63 );
 }
