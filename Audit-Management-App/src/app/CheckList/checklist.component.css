@@ -119,18 +119,6 @@ section{
       text-align: center;
       left: 47%;
   }
-  .lastrow{
-      border-bottom: 0px;
-  }
-.checkbtn  {
-    background-color: green;
-}
-.checkbtn:focus {     
-    background-color:yellow;    
-}
-.checkbtn:visited {
-    background-color: blue;
-}
 
 
 .qdivbtn{
@@ -165,7 +153,7 @@ section{
 .bigbtn1{
 	border:2px solid black;
 	border-radius: 10px;
-	background:#00a6e3;
+	background:white;
     padding: 5px;
     color:black;
 }
