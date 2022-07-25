@@ -13,6 +13,9 @@
         <td>
             <a href="https://github.com/Navyachowdary9908">Nelluri Navyasree</a>
         </td>
+        <td>
+            <a href="https://github.com/JosephSujay">Joseph Sujay</a>
+        </td>
     </tr>
 </table>
 
