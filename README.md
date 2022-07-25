@@ -44,7 +44,7 @@ Following services are part of the application:
 
 ## Requirements
 * Java 11
-* Angular 12
+* Angular 13
 
 ## Setup
 
@@ -73,19 +73,6 @@ User has to enter his username and password to login. Following credentials can 
 ## Logged In
 
 Authenticated users can now access the features of the application from the navigation bar under their username.
-
-## Name     -    Microservice
-
-Nikunj   -   Authorization (JWT)
-
-Chandu   -   Audit CheckList
-
-Navya  -   Audit Severity
-
-    -  Audit Benchmark
-
--  Audit-Management-App
-
 
 
 ### Audit-Authorization-Microservice :
