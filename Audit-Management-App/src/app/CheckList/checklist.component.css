@@ -11,10 +11,10 @@ img {
 section{
     width: 100%;
     height: 100%;
-    color: #fff;
+    
 } 
 .userIn {
-    background-color: #fff;
+    background-color: #ffffff;
     border: 2px solid black;
     color: black;
     position: absolute;
@@ -31,23 +31,23 @@ section{
     right:5.5vh;
 }
 .box1 {
-    background: linear-gradient(to right, black, 50%, teal );
+    background: white;
     margin-top: 12vh;
     margin-left: 10vh;
     margin-right: 10vh;
     padding: 10px;
-    color: #fff;
+    color: black;
     /* text-align: center; */
     border-radius: 10px;
   }
   .box2 {
-    background: linear-gradient(to right, black, 50%, teal );
+    background: white;
     margin-top: 4vh;
     margin-left: 0%;
     margin-right: 0%;
     padding: none;
     width:100%;
-    color: #fff;
+    color: black;
     text-align: center;
     border-radius: 20px;
   }
@@ -133,12 +133,12 @@ section{
 }
 
 .qdiv{
-    background-color: black;
+    background-color: white;
     border-radius: 10px;
 }
 
 .qdivbtn{
-    background-color: black;
+    background-color: white;
     text-align: center;
     margin: 10px;
     padding-top: 10px;
@@ -146,7 +146,7 @@ section{
 }
 
 .main{
-    background: white;
+    background: linear-gradient(to right, #0f0c29, #302b63, #24243e);
     position: absolute;
     z-index: -1;
     top:0px;
@@ -159,13 +159,19 @@ section{
     width: 120px;
 }
 .bigbtn{
-	border:white;
-	background: white;
+	border: black;
+	border-radius: 10px;
+	background: linear-gradient(to right, #302b63, 60%, black );
     padding: 5px;
+    color:white;
+}
+.bigbtn:hover{
+	background:linear-gradient(to right, black, 40%, #302b63 );
 }
 
 .largeLable{
     font-size: large;
+
 }
 
 .selectTag{
