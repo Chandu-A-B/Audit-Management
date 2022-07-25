@@ -1,4 +1,11 @@
-# CDE-MFPE-Project-Audit-Management-System
+# INTCDE22IJ087-POD1-AUDIT-MANAGEMENT
+MFPE Project
+
+# AUDIT-MANAGEMENT Application
+
+This is a full-stack MFPE project built as part of Cognizant CDE internship.
+
+Following services are part of the application:
 
 ## Authors :
 
