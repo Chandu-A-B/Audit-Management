@@ -84,7 +84,7 @@
 	
 	<!-- JAR CREATION -->
 	<build>
-        <finalName>MFPE-AuthorizationMS-JAR</finalName>
+        <finalName>audit-authorization</finalName>
 		<plugins>
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
